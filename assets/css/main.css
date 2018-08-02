@@ -135,7 +135,11 @@ hr {
    Wrap Sections
    ========================================================================== */
 #headerwrap {
-    background: url(../img/header-bg.jpg) no-repeat center top;
+    background: linear-gradient(
+      rgba(83, 153, 222, 0.85), 
+      rgba(0, 0, 0, 0.45)
+    ),
+        url(../img/header.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;

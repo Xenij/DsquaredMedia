@@ -33,17 +33,17 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img class="logo" src="assets/img/v10.png" style="width: 48px;
+                        <img class="logo" src="assets/img/logo.png" style="width: 48px;
     margin-top: -10px;">
                     </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="index.html">HOME</a>
+                            <a target="_parent" href="index.html">HOME</a>
                         </li>
                         <li class="active">
-                            <a href="about.html">ABOUT</a>
+                            <a target="_parent" href="about.html">ABOUT</a>
                         </li>
                         <li>
                             <a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="far fa-envelope"></i></a>
@@ -107,8 +107,8 @@
 						];
 						var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
 				</script>
-                        <p><b>Branding</b></p>
-                        <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+                        <p><b>Marketing</b></p>
+                        <p><small>The best marketing doesn't feel like marketing.</small></p>
                     </div>
                     <!-- /col-lg-3 -->
                     <!-- Second Chart -->
@@ -128,8 +128,8 @@
 						];
 						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
 				</script>
-                        <p><b>Leadership</b></p>
-                        <p><small>Leadership is about impact, influence and inspiration. Impact involves getting results, influence is about spreading the passion you have for your work, and you have to inspire team-mates and customers.</small></p>
+                        <p><b>Advertising</b></p>
+                        <p><small>I want consumers to say, "That's a hell of a product" instead of, "That's a hell of an ad."</small></p>
                     </div>
                     <!-- /col-lg-3 -->
                     <!-- Third Chart -->
@@ -149,8 +149,8 @@
 						];
 						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
 				</script>
-                        <p><b>Marketing</b></p>
-                        <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+                        <p><b>Writing</b></p>
+                        <p><small>Easy reading is damn hard writing.</small></p>
                     </div>
                     <!-- /col-lg-3 -->
                     <!-- Fourth Chart -->
@@ -170,8 +170,8 @@
 						];
 						var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
 				</script>
-                        <p><b>Fill In</b></p>
-                        <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+                        <p><b>Filming</b></p>
+                        <p><small>There are no rules in filmmaking. Only sins. And the cardinal sin is dullness.</small></p>
                     </div>
                     <!-- /col-lg-3 -->
                 </div>
@@ -185,7 +185,7 @@
                 <div class="row centered">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h4>WE ARE STORYTELLERS. BRANDS ARE OUR SUBJECTS. DESIGN IS OUR VOICE.</h4>
-                        <p>We believe ideas come from everyone, everywhere. At BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design.</p>
+                        <p>"We're loving it. It's really wonderful. Ad sales is exactly what our business has been lacking. I will refer everyone I know." <br><i> - Lynnette C.</i></p>
                     </div>
                 </div>
                 <!-- row -->
@@ -213,7 +213,7 @@
                 <div class="modal-content" style="margin-top: 3%;">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+                        <h4 class="modal-title" id="myModalLabel">Send an E-mail</h4>
                     </div>
                     <div class="modal-body">
                         <div class="row centered">
@@ -221,7 +221,8 @@
                             <form> 
                                 <input name="name" type="text" class="feedback-input" placeholder="Name" /> 
                                 <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                                <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
+                                <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
                                 <input type="submit" value="SUBMIT" />
                             </form>
                         </div>
