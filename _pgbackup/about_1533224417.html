@@ -10,9 +10,11 @@
         <title>DSquaredMediaSolutions</title>
         <!-- Bootstrap core CSS -->
         <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="assets/css/main.css" rel="stylesheet">
+        <script src="assets/js/Chart.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -21,9 +23,6 @@
     <![endif]-->
     </head>
     <body>
-        <script type="text/javascript">
-swfobject.registerObject("EmbedID");
-        </script>
         <!-- Fixed navbar -->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -40,14 +39,15 @@ swfobject.registerObject("EmbedID");
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
+                        <li>
                             <a href="index.html">HOME</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="about.html">ABOUT</a>
                         </li>
                         <li>
-</li>
+                            <a href="services.html">SERVICES</a>
+                        </li>
                         <li>
                             <a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="far fa-envelope"></i></a>
                         </li>
@@ -56,41 +56,31 @@ swfobject.registerObject("EmbedID");
                 <!--/.nav-collapse -->
             </div>
         </div>
-        <div id="headerwrap">
+        <div id="blue">
             <div class="container">
                 <div class="row centered">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1>It Doesn't Take a Rocket <b>Scientist</b></h1>
-                        <h2>It Takes a Specialist</h2>
-                    </div>
+</div>
                 </div>
                 <!-- row -->
             </div>
             <!-- container -->
         </div>
-        <!-- headerwrap -->
+        <!--  bluewrap -->
         <div class="container w">
             <div class="row centered">
                 <br>
                 <br>
-                <div class="col-lg-4">
-                    <i class="fas fa-tv"></i>
-                    <h4>PLATFORM</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+                <div class="col-lg-3">
+                    <img class="img-circle" src="assets/img/Dennis.jpg" width="110" height="auto" alt="">
+                    <h4>Dennis Dunphy</h4>
                 </div>
-                <!-- col-lg-4 -->
-                <div class="col-lg-4">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <h4>REVENUE</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+                <div class="col">
+                    <p>Established advertising executive with proven expierience in driving performance, excellence and service to accounts and agencies across the central and western regions.</p>
+                    <p><br> <a class="resume" download="resume.jpg" href="assets/img/resume.jpg" title="ImageName">
+    Resume</a></p>
                 </div>
-                <!-- col-lg-4 -->
-                <div class="col-lg-4">
-                    <i class="fa fa-trophy"></i>
-                    <h4>SUPPORT</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-                </div>
-                <!-- col-lg-4 -->
+                <!-- col-lg-3 -->
             </div>
             <!-- row -->
             <br>
@@ -98,10 +88,101 @@ swfobject.registerObject("EmbedID");
         </div>
         <!-- container -->
         <!-- PORTFOLIO SECTION -->
+        <div id="dg">
+            <div class="container">
+                <div class="row centered">
+                    <h4>SKILLS</h4>
+                    <br>
+                    <!-- First Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas" height="130" width="130"></canvas>
+                        <br>
+                        <script>
+					var doughnutData = [
+							{
+								value: 77,
+								color:"#3498db"
+							},
+							{
+								value : 23,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Branding</b></p>
+                        <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                    <!-- Second Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas2" height="130" width="130"></canvas>
+                        <br>
+                        <script>
+					var doughnutData = [
+							{
+								value: 92,
+								color:"#3498db"
+							},
+							{
+								value : 8,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Leadership</b></p>
+                        <p><small>Leadership is about impact, influence and inspiration. Impact involves getting results, influence is about spreading the passion you have for your work, and you have to inspire team-mates and customers.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                    <!-- Third Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas3" height="130" width="130"></canvas>
+                        <br>
+                        <script>
+					var doughnutData = [
+							{
+								value: 90,
+								color:"#3498db"
+							},
+							{
+								value : 10,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Marketing</b></p>
+                        <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                    <!-- Fourth Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas4" height="130" width="130"></canvas>
+                        <br>
+                        <script>
+					var doughnutData = [
+							{
+								value: 80,
+								color:"#3498db"
+							},
+							{
+								value : 20,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Fill In</b></p>
+                        <p><small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
         <!-- DG -->
-        <!-- FEATURE SECTION -->
-        <!-- container -->
-        <!-- dg -->
         <div id="r">
             <div class="container">
                 <div class="row centered">
@@ -119,8 +200,8 @@ swfobject.registerObject("EmbedID");
         <div id="f">
             <div class="container">
                 <div class="row centered">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-dribbble"></i></a>
                 </div>
                 <!-- row -->
