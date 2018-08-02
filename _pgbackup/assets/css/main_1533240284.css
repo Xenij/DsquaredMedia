@@ -160,15 +160,14 @@ hr {
 #headerwrap h1 {
     margin-top: 100px;
     color: white;
+    font-size: 70px;
     font-weight: 300;
     letter-spacing: 3px;
-    text-align: center;
-    font-size: 5vw;
 }
 
 #headerwrap h2 {
     color: white;
-    font-size: 4vw;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;

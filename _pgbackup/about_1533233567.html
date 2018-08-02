@@ -10,9 +10,11 @@
         <title>DSquaredMediaSolutions</title>
         <!-- Bootstrap core CSS -->
         <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="assets/css/main.css" rel="stylesheet">
+        <script src="assets/js/Chart.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -21,9 +23,6 @@
     <![endif]-->
     </head>
     <body>
-        <script type="text/javascript">
-swfobject.registerObject("EmbedID");
-        </script>
         <!-- Fixed navbar -->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -40,14 +39,12 @@ swfobject.registerObject("EmbedID");
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
+                        <li>
                             <a target="_parent" href="index.html">HOME</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a target="_parent" href="about.html">ABOUT</a>
                         </li>
-                        <li>
-</li>
                         <li>
                             <a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="far fa-envelope"></i></a>
                         </li>
@@ -56,41 +53,31 @@ swfobject.registerObject("EmbedID");
                 <!--/.nav-collapse -->
             </div>
         </div>
-        <div id="headerwrap">
+        <div id="blue">
             <div class="container">
                 <div class="row centered">
-                    <div class="col-md-auto col-lg-auto">
-                        <h1>DSquaredMediaSolutions</h1>
-                        <h2>Dennis Dunphy</h2>
-                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+</div>
                 </div>
                 <!-- row -->
             </div>
             <!-- container -->
         </div>
-        <!-- headerwrap -->
+        <!--  bluewrap -->
         <div class="container w">
             <div class="row centered">
                 <br>
                 <br>
-                <div class="col-lg-4">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>OPTIMIZATION</h4>
-                    <p>Moving auctions to an external server lets publishers integrate with more demand sources while speeding up page load times. The result? More money in publisher pockets, more transparent auctions, and better user experience.</p>
+                <div class="col-lg-3">
+                    <img class="img-circle" src="assets/img/Dennis.jpg" width="110" height="auto" alt="">
+                    <h4>Dennis Dunphy</h4>
                 </div>
-                <!-- col-lg-4 -->
-                <div class="col-lg-4">
-                    <i class="fas fa-tv"></i>
-                    <h4>Placement</h4>
-                    <p>Pick from more than 12,000 premium publishers and platforms that help narrow targeting to reach the exact audience that drives results.  This is key to have successful campaigns leading to long term revenue.</p>
+                <div class="col">
+                    <p>Established advertising executive with proven expierience in driving performance, excellence and service to accounts and agencies across the central and western regions.</p>
+                    <p><br> <a class="resume" download="resume.jpg" href="assets/img/resume.jpg" title="ImageName">
+    Resume</a></p>
                 </div>
-                <!-- col-lg-4 -->
-                <div class="col-lg-4">
-                    <i class="fas fa-hands-helping"></i>
-                    <h4>SUPPORT</h4>
-                    <p>Whether you recognize that your ad program is underperforming, need guidance transitioning from print to digital, or want to make the most of exhibit sales and conference sponsorships, I can help you succeed.</p>
-                </div>
-                <!-- col-lg-4 -->
+                <!-- col-lg-3 -->
             </div>
             <!-- row -->
             <br>
@@ -98,15 +85,129 @@ swfobject.registerObject("EmbedID");
         </div>
         <!-- container -->
         <!-- PORTFOLIO SECTION -->
+        <div id="dg">
+            <div class="container">
+                <div class="row centered">
+                    <h4>SKILLS</h4>
+                    <br>
+                    <!-- First Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas" height="130" width="130">Browser does not support canvas</canvas>
+                        <br>
+                        <span style="text-align: left;
+    width: 140px;
+    position: absolute;
+    top: 59px;
+    margin-left: -10px;">77</span>
+                        <script>
+                          
+					var doughnutData = [
+							{
+								value: 77,
+								color:"#3498db"
+							},
+							{
+								value : 23,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+                          
+                           
+				</script>
+                        <p><b>Marketing</b></p>
+                        <p><small>The best marketing doesn't feel like marketing.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                    <!-- Second Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas2" height="130" width="130">10</canvas>
+                        <br>
+                        <span style="text-align: left;
+    width: 140px;
+    position: absolute;
+    top: 59px;
+    margin-left: -10px;">92</span>
+                        <script>
+					var doughnutData = [
+							{
+								value: 92,
+								color:"#3498db"
+							},
+							{
+								value : 8,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Advertising</b></p>
+                        <p><small>I want consumers to say, "That's a hell of a product" instead of, "That's a hell of an ad."</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                    <!-- Third Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas3" height="130" width="130"></canvas>
+                        <br>
+                        <span style="text-align: left;
+    width: 140px;
+    position: absolute;
+    top: 59px;
+    margin-left: -10px;">90</span>
+                        <script>
+					var doughnutData = [
+							{
+								value: 90,
+								color:"#3498db"
+							},
+							{
+								value : 10,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Writing</b></p>
+                        <p><small>Easy reading is damn hard writing.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                    <!-- Fourth Chart -->
+                    <div class="col-lg-3">
+                        <canvas id="canvas4" height="130" width="130"></canvas>
+                        <br>
+                        <span style="text-align: left;
+    width: 140px;
+    position: absolute;
+    top: 59px;
+    margin-left: -10px;">80</span>
+                        <script>
+					var doughnutData = [
+							{
+								value: 80,
+								color:"#3498db"
+							},
+							{
+								value : 20,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+				</script>
+                        <p><b>Filming</b></p>
+                        <p><small>There are no rules in filmmaking. Only sins. And the cardinal sin is dullness.</small></p>
+                    </div>
+                    <!-- /col-lg-3 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
         <!-- DG -->
-        <!-- FEATURE SECTION -->
-        <!-- container -->
-        <!-- dg -->
         <div id="r">
             <div class="container">
                 <div class="row centered">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <p>"Thank You! I wish I would have thought of it first. Ad sales is the most valuable business resource we have EVER purchased. Absolutely wonderful!"<br><i>- Eirena S.</i></p>
+                        <p>"We're loving it. It's really wonderful. Ad sales is exactly what our business has been lacking. I will refer everyone I know." <br><i> - Lynnette C.</i></p>
                     </div>
                 </div>
                 <!-- row -->
@@ -143,7 +244,7 @@ swfobject.registerObject("EmbedID");
                                 <input name="name" type="text" class="feedback-input" placeholder="Name" /> 
                                 <input name="email" type="text" class="feedback-input" placeholder="Email" />
                                 <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
-                                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                                <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
                                 <input type="submit" value="SUBMIT" />
                             </form>
                         </div>
